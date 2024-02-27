@@ -1,6 +1,5 @@
 function changeImage() {
-    var image = document.getElementById("buttonClick");
-    var src = image.src;
+    var src = this.src;
     var extIndex = src.lastIndexOf(".");
     var filename = src.substring(0, extIndex);
     var extension = src.substring(extIndex);
