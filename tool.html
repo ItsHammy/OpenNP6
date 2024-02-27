@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1000px, initial-scale=1.0">
     <title>OpenNP6 | OpenSource McDonald's Training</title>
 
     <!--Font import-->
@@ -13,59 +13,24 @@
 
     <!--JS Import-->
     <script src="assets/button.js"></script>
-
-    <style>
-        /* Column */
-        .leftColumn {
-            width: 25%;
-            background-color: grey;
-            float: left;
-            height: 100vh;
-        }
-
-        /* Table */
-        .table {
-            width: 75%;
-            height: 100vh;
-            float: left;
-            table-layout: fixed;
-        }
-
-        .table td {
-            width: 10%;
-            height: 10%;
-            border: 0px;
-        }
-    </style>
 </head>
 <!--
     Here we go...
 -->
 <body>
     <div class="leftColumn"></div>
-    <div class="table">
+    <div class="workSpace">
+        Tip: Hover over any button or "<b>NOTE</b>" text to see more information.
         <table>
             <tbody>
                 <!-- Table rows -->
                 <tr>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/00.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/01.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/02.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/03.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/04.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/05.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/06.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/07.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/08.png"></td>
-                    <td><img class="buttonClick" onclick="changeImage()" src="resources/POS_Images/09.png"></td>
-                </tr>
-                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    <td><p title="This area normally shows logged in user information, as well as the date, time, and other diagnostic tools."><b>NOTE</b></p></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -81,7 +46,31 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/BLK_MGR.png" title="Opens the manager menu. Disabled in this software"></td>
+                </tr>
+                <tr>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/00.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/01.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/02.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/03.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/04.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/05.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/06.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/07.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/08.png"></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/09.png"></td>
+                </tr>
+                <tr>
+                    <td><h1>Lunch</h1></td>
+                    <td><h1>Menu</h1></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" title="I know, i know, I don't have the image file for Breakfast Menu" src="resources/POS_Images/NP6_Condiment_SceBkfst.png"></td>
+                    <td><h2>CHICK</h2></td>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/BLK_MCCAFE.png"></td>
+                    <td><h2>DRINK</h2></td>
+                    <td><h2>DSSRT</h2></td>
+                    <td><img width="80px" height="80px" src="resources/POS_Images/NP6_Condiments_inactive.png"></td>
+                    <td><h2>LSM</h2></td>
+                    <td><img width="80px" height="80px" src="resources/POS_Images/Modifiers_VoidLine.png" title="Void the selected line."></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -93,7 +82,19 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td><img width="80px" title="Promo Selected Item (Make Free). Note: This normally has a store-set limit that has been removed." height="80px" src="resources/POS_Images/Modifiers_PromoItem.png"></td>
+                </tr>
+                <tr>
+                    <td><img width="80px" height="80px" onclick="changeImage(this)" src="resources/POS_Images/NP6_Condiment_BunBigMac.png"></td>
                     <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img width="80px" title="Clear a subchoice" height="80px" src="resources/POS_Images/Modifiers_ClearChoice.png"></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -105,31 +106,8 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><img title="Open Side Choices Mini Menu" width="80px" height="80px" src="resources/POS_Images/Modifiers_SideChoice.png"></td>
+                    <td><p title="In most editions, this now says 'REMOVE OFFER' for GMAL (MyMaccas) Loyalty Rewards"><-- NOTE (Hover)</p></td>
                 </tr>
                 <tr>
                     <td></td>

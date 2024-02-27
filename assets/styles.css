@@ -3,3 +3,26 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+/* Column */
+.leftColumn {
+    width: 250px;
+    background-color: rgb(221, 221, 221);
+    float: left;
+    height: 100vh;
+}
+
+/* Table */
+.workSpace {
+    width: 75%;
+    height: 100vh;
+    float: left;
+    table-layout: fixed;
+    background-image: url('../resources/POS_Images/BckGround01.png');
+}
+
+.workSpace td {
+    width: 80px;
+    height: 80px;
+    border: 0px;
+    text-align: center;
+}

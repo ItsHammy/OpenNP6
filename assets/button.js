@@ -1,5 +1,5 @@
-function changeImage() {
-    var src = this.src;
+function changeImage(image) {
+    var src = image.src;
     var extIndex = src.lastIndexOf(".");
     var filename = src.substring(0, extIndex);
     var extension = src.substring(extIndex);
