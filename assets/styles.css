@@ -23,6 +23,50 @@ body {
 .workSpace td {
     width: 80px;
     height: 80px;
-    border: 0px;
+    border: 1px;
+    border-radius: 1px;
+    border-color: antiquewhite;
     text-align: center;
+}
+
+/* Button Types */
+
+#number{
+    background-color: #FFF;
+    color: #000;
+}
+
+#menu {
+    background-color: darkblue;
+    color: #FFF;
+}
+
+#item{
+    background-color: red;
+    color: #FFF;
+}
+
+#sizeModifier{
+    background-color: goldenrod;
+    color: black;
+}
+#drinkItem{
+    background-color: blue;
+    color: white;
+}
+#drinkLSM{
+    background-color: purple;
+    color: white;   
+}
+#subMenu{
+    background-color: aqua;
+    color: black;
+}
+#cashMenu{
+    background-color: lightgreen;
+    color: black;
+}
+#optionFunction{
+    background-color: lightgray;
+    color: black;
 }
